@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /*LIGHT MODE*/
+    --text-color: #fff;
+    --background-color: rgb(70, 17, 17);
+    --sign-up: #d6a06ba8;
+    --input-submit: #603f20;
+    --input-submit-hover: #53381e;
+    --btns: rgba(0, 0, 0, 0.363);
+    /*DARK MODE*/
+    --background-color-body-dark: rgb(14, 13, 13);
+    --btns-dark: rgba(255, 255, 255, 0.247);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+/*------HEADER------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+.logo img {
+    height: 70px;
+    padding: 10px;
+    margin-left: 30px
+}
+
+/*------NAVIGATION------*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+nav li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    margin-right: 50px;
+}
+
+.menu-icon {
+    display: none;
+    margin-right: 30px;
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+/*------MAIN------*/
+.welcome-section {
+    min-height: calc(100vh - 80px);
+    background-image: url("./img/mike-kenneally-tNALoIZhqVM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*------ABOUT-US------*/
+.about-us {
+    padding: 20px;
+}
+
+.about-us-p {
+    text-align: justify;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 2rem;
+    text-align: center;
+}
+
+.photo-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 70vw;
+    margin: 30px auto;
+}
+
+.photo {
+    width: calc((100% - 4rem) / 3);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.photo-1 {
+    background-image: url("./img/Photo-1.jpg");
+}
+
+.photo-2 {
+    background-image: url("./img/Photo-2.jpg");
+}
+
+.photo-3 {
+    background-image: url("./img/Photo-3.jpg");
+}
+
+/*------SUBSCRIPTION------*/
+.subscription {
+    height: 80vh;
+    padding: 100px;
+}
+
+.subscription h3 {
+    margin: 2rem;
+    font-size: 30px;
+}
+
+.sign-up {
+    margin: 0 auto;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: var(--sign-up);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: dotted black 1px;
+    min-width: 240px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+
+input[type=submit] {
+    padding: 5px;
+    min-width: 240px;
+    border-radius: 20px;
+    background-color: var(--input-submit);
+    color: var(--text-color);
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: var(--input-submit-hover)
+}
+
+.password-match-text {
+    height: 35px;
+    font-size: 20px;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+/*------FOOTER------*/
+footer {
+    background-color: var(--background-color);
+    padding: 30px 70px;
+    color: var(--text-color);
+    line-height: 35px;
+}
+
+.paragraph-1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.paragraph-2 {
+    margin-bottom: 30px;
+}
+
+.logo-2 img {
+    height: 100px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-phone,
+.fa-envelope {
+    margin-right: 10px;
+}
+
+.footer-contact a {
+    color: var(--text-color)
+}
+
+/*------BUTTONS------*/
+.btn {
+    background-color: var(--btns);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-btn {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+.scroll-btn i {
+    padding: 13px;
+}
+
+.dark-mode-btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 150px;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------DARK-MODE------*/
+.body-dark {
+    background-color: var(--background-color-body-dark);
+    color: var(--text-color);
+}
+
+.btn-dark {
+    background-color: var(--btns-dark);
+}

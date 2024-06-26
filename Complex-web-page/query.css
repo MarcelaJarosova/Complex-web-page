@@ -1,0 +1,53 @@
+@media only screen and (max-width: 900px) {
+    header {
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        background-color: var(--background-color);
+        width: 100%;
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .subscription {
+        margin: 100px 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    nav {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .photo-section {
+        flex-direction: column;
+    }
+
+    .photo {
+        min-width: 100%;
+    }
+}
